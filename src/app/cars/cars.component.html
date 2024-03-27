@@ -1,0 +1,29 @@
+<div class="parent">
+    <h1>Cars</h1>
+    <div *ngFor="let car of cars">
+        <label for="">{{car.name}}</label>
+        <input type="radio" name="cars" value="{{car.path}}" [(ngModel)]="selectedimage">
+    </div>
+    <div *ngFor="let car of cars">
+        <img src="{{car.path}}" *ngIf="selectedimage==car.path" alt="" height="300px" width="400px">
+    </div>
+    <!-- <label for="">Honda</label>
+    <input type="radio" name="cars" value="Honda" [(ngModel)]="selectedimage">
+    <label for="">BMW</label>
+    <input type="radio" name="cars" value="BMW" [(ngModel)]="selectedimage">
+    <label for="">Audi</label>
+    <input type="radio" name="cars" value="Audi" [(ngModel)]="selectedimage">
+    <br><br>
+    <div *ngIf="selectedimage==='Honda'">
+        <img src="https://media.zigcdn.com/media/content/2023/Jan/cover_63bd2bc9677df.jpg" alt="" height="300px"
+        width="400px" >
+    </div>
+    <div *ngIf="selectedimage==='BMW'">
+        <img src="https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym13JTIwY2FyfGVufDB8fDB8fHww" alt="" height="300px"
+        width="400px">
+    </div>
+    <div *ngIf="selectedimage==='Audi'">
+        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/51909/a4-exterior-right-front-three-quarter-2.jpeg?q=80" alt="" height="300px"
+        width="400px">
+    </div> -->
+    

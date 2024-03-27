@@ -1,0 +1,22 @@
+<div class="parent">
+    <div class="child1">
+      <div class="right">
+        <div class="right1">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 row1 " *ngFor="let product of products">
+                <img src="{{product.image}}" alt="">
+                <div class="rating">
+                   <b><p>{{product.rating.rate}}</p></b>
+                    <b>
+                    <p>{{product.rating.count}}</p>
+                   </b>
+                </div>
+                <p><b>{{product.category}}</b></p>
+                <p>{{product.title}}</p>
+                <p>{{"Rs."+product.price}} </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+</div>

@@ -1,0 +1,67 @@
+<input type="text" [(ngModel)]="term" (keyup)="filterbikes()">
+
+<select name="" id="" [(ngModel)]="pageno" (change)="pagedbikes()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+
+<label for="">column:</label>
+<select [(ngModel)]="column" >
+    <option value="color">color</option>
+    <option value="Vehicle">Vehicle</option>
+</select>
+
+<label for="">order:</label>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">ascending</option>
+    <option value="desc">decending</option>
+</select>
+
+<button (click)="sortedbikes()">sort</button>
+<br><br>
+
+<input type="text" placeholder="search" [(ngModel)]="queries.filter" (keypress)="query()">
+<label for="">pageno</label>
+<select name="" id="" [(ngModel)]="queries.pageno" (change)="query()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<select name="" id="" [(ngModel)]="queries.sortBy">
+    <option value="id">id</option>
+</select>
+<select name="" id="" [(ngModel)]="queries.order">
+    <option value="asc">ascending</option>
+    <option value="desc">desending</option>
+</select>
+<button (click)="query()">sort</button>
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let bike of bikes">
+           <td>{{bike.Vehicle}}</td>
+           <td>{{bike.manufacturer}}</td> 
+           <td>{{bike.model}}</td>
+           <td>{{bike.color}}</td> 
+           <td>{{bike.type}}</td>
+           <td>{{bike.fuel}}</td>
+           <td>
+            <img src="{{bike.image}}" alt="" height="50px" width="50px">
+           </td>
+           <td>{{bike.id}}</td>
+           <td><button (click)="deletedbikes(bike.id)">Delete</button></td> 
+           
+        </tr>
+
+    </tbody>
+</table>

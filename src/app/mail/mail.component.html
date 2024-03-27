@@ -1,0 +1,6 @@
+<div class="parent">
+    <div class="child" *ngFor="let mail of mailsdata">
+        <h5 [ngStyle]="{color:mail.completed==true?'grey':'black'}">{{mail.id}}</h5> 
+        <h5 [ngStyle]="{color:mail.completed==true?'grey':'black'}">{{mail.title}}</h5> 
+    </div>
+</div>

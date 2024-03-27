@@ -1,0 +1,33 @@
+
+.parent{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+.left button{
+        height: 35px ; 
+        width: 90px;
+        margin-top: 40px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        font-size: 100%;
+    
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: teal;
+    overflow: auto;
+}

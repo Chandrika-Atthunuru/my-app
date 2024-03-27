@@ -1,0 +1,10 @@
+<div class="parent">
+    <div class="child">
+        <form [formGroup]="Loginform">
+            <input type="email" placeholder="Email" formControlName="email">
+        <input type="password" placeholder="Password" formControlName="password">
+        <br>
+        <button (click)="onsubmit()" >login</button>
+        </form>
+    </div>
+</div>

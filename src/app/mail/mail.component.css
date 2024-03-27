@@ -1,0 +1,12 @@
+.parent{
+    background-color: white;
+}
+.child{
+    display: flex;
+    margin-left: 20px;
+}
+.child h5{
+    margin-left: 30px;
+    line-height: 45px;
+    font-weight: 650;
+}

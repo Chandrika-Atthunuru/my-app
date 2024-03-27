@@ -1,0 +1,48 @@
+<div class="parent">
+    <div class="child">
+        <div class="sort">
+            <h3>Filters</h3>
+        <select name="" id="" [(ngModel)]="term" (change)="prices()">
+            <option value="">Sort by: Recommended</option>
+            <option value="pricelowtohigh" >price low to high</option>
+            <option value="pricehightolow" >price high to low </option>
+        </select>
+        </div>
+    </div>
+    <div class="child1">
+    <div class="left">
+        <div class="left1"  [(ngModel)]="term1" (change)="check()">
+            <h4>Category</h4>
+            <input type="checkbox" value="mens">
+            <label for="">Men's Clothing </label>
+            <br>
+            <input type="checkbox" value="Jewellery" >
+            <label for="">Jewellery</label>
+            <br>
+            <input type="checkbox"  value="Electronics" >
+            <label for="">Electronics</label>
+            <br>
+            <input type="checkbox"  value="Women">
+            <label for="">Women's Clothing</label>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right1">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 row1 " *ngFor="let product of products">
+                <img src="{{product.image}}" alt="">
+                <div class="rating">
+                   <b><p>{{product.rating.rate}}</p></b>
+                    <b>
+                    <p>{{product.rating.count}}</p>
+                   </b>
+                </div>
+                <p><b>{{product.category}}</b></p>
+                <p>{{product.title}}</p>
+                <p>{{"Rs."+product.price}} </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+</div>

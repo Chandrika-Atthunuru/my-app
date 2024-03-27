@@ -1,0 +1,26 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+}
+.tbl{
+    height: 61%;
+    width: 80%;
+}
+button{
+    margin-left: 25px;   
+}
+input{
+    margin-left: 25px;
+    margin-top: 20px;
+    padding: 3px;  
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+

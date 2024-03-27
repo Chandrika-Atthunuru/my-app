@@ -1,0 +1,9 @@
+<div class="parent">
+    <div class="child">
+       <div *ngFor="let meme of photosgallery">
+            <h3>Name: {{ meme.name }}</h3>
+           
+            <img src ="{{meme.url}}" height="{{meme.height}}" width="{{meme.width}}" alt="" />  
+       </div>
+    </div>
+</div>
